@@ -1,0 +1,3 @@
+[submodule "vacdec"]
+	path = vacdec
+	url = https://github.com/hannob/vacdec

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 # execute with watch -n 1
 # watch -n 1 ./snoopdoc.sh ./sound-to-play.mp3
@@ -8,6 +8,6 @@ SOUNDPATH=$1
 
 fswebcam -r 1280x720. $IMGPATH
 
-if vacdec $IMGPATH; then
+if /app/vacdec/vacdec $IMGPATH; then
 	mpg123 $SOUNDPATH
 fi
