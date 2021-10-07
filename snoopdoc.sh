@@ -6,7 +6,7 @@
 IMGPATH=/tmp/out.jpg
 SOUNDPATH=$1
 
-fswebcam -r 1280x720. $IMGPATH
+fswebcam --no-banner -r 1920x1080 $IMGPATH
 
 if /app/vacdec/vacdec $IMGPATH; then
 	mpg123 $SOUNDPATH
